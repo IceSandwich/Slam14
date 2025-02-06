@@ -1,0 +1,7 @@
+/x64
+/.vs
+/*/x64
+/*/Data
+*.ply
+Thirdparty/GLEW
+Thirdparty/DBow3/vsbuild

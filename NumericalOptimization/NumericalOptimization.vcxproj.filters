@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="公共头文件">
+      <UniqueIdentifier>{f3d971b7-e75a-43ca-9b53-d6b06be7961d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="公共源文件">
+      <UniqueIdentifier>{d14ef798-19b9-4dd4-8c4e-9ef59a21372a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\EigenExample\GuardTimer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleProblem.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PnP.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ICP.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\KittiSLAM\Algorithm\G2OTypes.cpp">
+      <Filter>公共源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\KittiSLAM\Algorithm\ImageUtils.cpp">
+      <Filter>公共源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SimpleProblem.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraUtils.h">
+      <Filter>公共头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EigenExample\GuardTimer.h">
+      <Filter>公共头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PangolinExample\PangolinUtils.h">
+      <Filter>公共头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PangolinExample\PointCloud.h">
+      <Filter>公共头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SE3Manifold.h">
+      <Filter>公共头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PnP.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TumDataset.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ICP.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\KittiSLAM\Algorithm\G2OTypes.h">
+      <Filter>公共头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

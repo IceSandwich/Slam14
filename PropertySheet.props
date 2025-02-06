@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <OpenCVBuildPath>D:\program\opencv455\opencv\build\</OpenCVBuildPath>
+    <DEPPATH>$(SolutionDir)Thirdparty\DBoW3\vsbuild\install\bin;$(SolutionDir)Thirdparty\g2o\vsbuild\install\bin;$(SolutionDir)Thirdparty\GLEW\bin;$(SolutionDir)Thirdparty\Pangolin\vsbuild\install\bin;$(OpenCVBuildPath)x64\vc15\bin</DEPPATH>
+    <DisableOpenCVDebugEnv>OPENCV_OPENCL_DEVICE=disabled;OPENCV_OPENCL_RUNTIME=null</DisableOpenCVDebugEnv>
+  </PropertyGroup>
+  <PropertyGroup>
+    <IncludePath>$(SolutionDir)Thirdparty\glog\build\install\include;$(SolutionDir)Thirdparty\DBoW3\vsbuild\install\include;$(SolutionDir)Thirdparty\g2o\vsbuild\install\include;$(SolutionDir)Thirdparty\ceres-solver\vsbuild\install\include\ceres\internal\miniglog;$(SolutionDir)Thirdparty\ceres-solver\vsbuild\install\include;$(SolutionDir)Thirdparty\GLEW\include;$(OpenCVBuildPath)include;$(SolutionDir)Thirdparty\eigen\vsbuild\install\include\eigen3;$(SolutionDir)Thirdparty\Sophus\vsbuild\install\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)Thirdparty\glog\build\install\lib;$(SolutionDir)Thirdparty\g2o\vsbuild\install\lib;$(SolutionDir)Thirdparty\ceres-solver\vsbuild\install\lib\;$(OpenCVBuildPath)x64\vc15\lib;$(SolutionDir)Thirdparty\GLEW\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <Link>
+      <AdditionalDependencies>glog$(LibSuffix).lib;opencv_world455$(LibSuffix).lib;ceres$(CeresSolverSuffix).lib;glew32.lib;OpenGL32.lib;g2o_core.lib;g2o_ext_freeglut_minimal.lib;g2o_opengl_helper.lib;g2o_solver_dense.lib;g2o_solver_eigen.lib;g2o_solver_pcg.lib;g2o_solver_slam2d_linear.lib;g2o_solver_structure_only.lib;g2o_stuff.lib;g2o_types_data.lib;g2o_types_icp.lib;g2o_types_sba.lib;g2o_types_sclam2d.lib;g2o_types_sim3.lib;g2o_types_slam2d.lib;g2o_types_slam2d_addons.lib;g2o_types_slam3d.lib;g2o_types_slam3d_addons.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ClCompile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <PreprocessorDefinitions>GLOG_USE_GLOG_EXPORT;_USE_MATH_DEFINES;SOPHUS_USE_BASIC_LOGGING;MINIGLOG;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <BuildMacro Include="OpenCVBuildPath">
+      <Value>$(OpenCVBuildPath)</Value>
+    </BuildMacro>
+    <BuildMacro Include="DEPPATH">
+      <Value>$(DEPPATH)</Value>
+    </BuildMacro>
+    <BuildMacro Include="DisableOpenCVDebugEnv">
+      <Value>$(DisableOpenCVDebugEnv)</Value>
+    </BuildMacro>
+  </ItemGroup>
+</Project>
