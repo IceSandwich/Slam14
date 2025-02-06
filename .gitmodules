@@ -1,0 +1,26 @@
+[submodule "Thirdparty/eigen"]
+	path = Thirdparty/eigen
+	url = https://gitlab.com/libeigen/eigen.git
+[submodule "Thirdparty/Pangolin"]
+	path = Thirdparty/Pangolin
+	url = https://github.com/stevenlovegrove/Pangolin
+[submodule "Thirdparty/Sophus"]
+	path = Thirdparty/Sophus
+	url = git@github.com:IceSandwich/Slam14-Sophus.git
+	branch = slam14
+[submodule "Thirdparty/ceres-solver"]
+	path = Thirdparty/ceres-solver
+	url = https://ceres-solver.googlesource.com/ceres-solver
+[submodule "Thirdparty/DBow3"]
+	path = Thirdparty/DBow3
+	url = git@github.com:IceSandwich/Slam14-DBow3.git
+	branch = slam14
+[submodule "Thirdparty/g2o"]
+	path = Thirdparty/g2o
+	url = https://github.com/RainerKuemmerle/g2o.git
+[submodule "Thirdparty/glog"]
+	path = Thirdparty/glog
+	url = https://github.com/google/glog.git
+[submodule "Thirdparty/gflags"]
+	path = Thirdparty/gflags
+	url = https://github.com/gflags/gflags.git
